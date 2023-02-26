@@ -23,7 +23,12 @@ jobs:
       - name: Install Chrome
         uses: browser-actions/setup-chrome@latest
 
-      - name: Run tests
+      - name: Install Dependencies
         run: |
           cd webdriver-sample
-          mvn clean test
+          mvn --batch-mode package -Dmaven.test.skip
+
+      - name: Run Tests
+        run: |
+          cd webdriver-sample
+          mvn test
