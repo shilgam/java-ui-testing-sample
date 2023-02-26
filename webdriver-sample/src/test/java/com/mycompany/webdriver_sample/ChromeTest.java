@@ -16,7 +16,7 @@ public class ChromeTest {
 
     @BeforeAll
     static void setupClass() {
-        WebDriverManager.chromiumdriver().setup();
+        WebDriverManager.chromedriver().setup();
     }
 
     @BeforeEach
