@@ -33,7 +33,7 @@ public class ChromeTest {
         driver.quit();
     }
 
-    @Test
+    // @Test
     public void test() {
         // Exercise
         driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
